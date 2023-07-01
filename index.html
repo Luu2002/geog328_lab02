@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		/* Style the navigation bar container */
+		.navbar {
+			overflow: hidden;
+			background-color: #1c346c;
+		}
+
+		/* Style the links inside the navigation bar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: rgb(153, 207, 216);
+			text-align: center;
+			padding: 30px 40px; /* Increased padding */
+			text-decoration: none;
+			font-size: 30px; /* Increased font size */
+		}
+
+		/* Change the color of links on hover */
+		.navbar a:hover {
+			background-color: #12aad5;
+			color: rgb(20, 3, 3);
+		}
+
+		/* Style the dropdown menu */
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		/* Style the dropdown button */
+		.dropdown .dropbtn {
+			font-size: 30px; /* Increased font size */
+			border: none;
+			outline: none;
+			color: rgb(153, 207, 216);
+			padding: 30px 40px; /* Increased padding */
+			background-color: inherit;
+			font-family: inherit;
+			margin: 0;
+		}
+
+		/* Style the dropdown content (hidden by default) */
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		/* Style the links inside the dropdown */
+		.dropdown-content a {
+			float: none;
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		/* Change the color of dropdown links on hover */
+		.dropdown-content a:hover {
+			background-color: #12aad5;
+			color: black;
+		}
+
+		/* Show the dropdown menu on hover */
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+    .image-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px; 
+		}
+
+   /* Style the video: 100% width and height to cover the entire window */
+		#myVideo {
+			position: fixed;
+			z-index: -1; /* Set z-index to -1 to position the video behind other elements */
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover; /* Ensure the video covers the entire container */
+		}
+
+		/* Add some content at the bottom of the video/page */
+		.content {
+			position: fixed;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.5);
+			color: #f1f1f1;
+			width: 100%;
+			padding: 20px;
+			z-index: 1; /* Set a higher z-index to overlay the video */
+		}
+
+		/* Style the button used to pause/play the video */
+		#myBtn {
+			width: 200px;
+			font-size: 18px;
+			padding: 10px;
+			border: none;
+			background: #157a87;
+			color: #fff;
+			cursor: pointer;
+		}
+
+		#myBtn:hover {
+			background: #ddd;
+			color: black;
+		}
+
+
+	</style>
+</head>
+<body>
+
+  <!--FullScreen Background Video-->
+<video autoplay muted loop id="myVideo">
+  <source src="video/wave.mp4">
+</video>
+  <!-- pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+
+<script>
+  // Get the video
+  var video = document.getElementById("myVideo");
+  
+  // Get the button
+  var btn = document.getElementById("myBtn");
+  
+  // Pause and play the video, and change the button text
+  function myFunction() {
+    if (video.paused) {
+      video.play();
+      btn.innerHTML = "Pause";
+    } else {
+      video.pause();
+      btn.innerHTML = "Play";
+    }
+  }
+  </script>
+
+	<!-- Create the navigation bar -->
+	<div class="navbar">
+		<a href="index.html">Home</a>
+    <div class="dropdown">
+			<button class="dropbtn">Fuzhou</button>
+			<div class="dropdown-content">
+				<a href="Fu Food.html">Fuzhou Cuisine</a>
+				<a href="Fu Place.html">Shop in Fuzhou</a>
+				<a href="Fu Visit.html">Explore Fuzhou</a>
+			</div>
+		</div>
+    <a href="More Information.html">More Information</a>
+  </div>
+
+
+  <!-- Home Page Context-->
+  <div class="image-container">
+  <img src="img/Fu.home.pg.jpeg" alt="Description of the image" width="1000" height="600" style="border: 1px solid black;">
+  </div>
+
+  <div class="photo-container" style="margin: 0 auto; width: 55%; font-size: 25px;">
+    <p style="font-size: 25px; font-family: 'Cormorant Garamond', serif; color: #fff;">Welcome to my site, your one-stop shop for exploring 
+      the fascinating city of Fuzhou! You've come to the perfect place whether you're planning a trip or simply inquisitive 
+      about this wonderful area. This page is dedicated to highlighting Fuzhou's rich cultural history, gorgeous sites, 
+      delectable food, and dynamic shopping experiences.</p>
+  
+    <p style="font-size: 25px; font-family: 'Cormorant Garamond', serif; color: #fff;">Prepare to be captivated as we reveal a chosen list 
+      of incredible locations to explore in Fuzhou. Immerse yourself in the breathtaking grandeur of historical locations such 
+      as the spectacular Three Lanes and Seven Alleys, where old buildings and meandering alleyways weave together to transport
+      you back in time. Explore West Lake Park's calm beauty, where tranquil waterways and lush plants offer a sanctuary of 
+      tranquility in the midst of the bustling metropolis.</p>
+
+    <p style="font-size: 25px; font-family: 'Cormorant Garamond', serif; color: #fff;">But that's not all—Fuzhou is also a gastronomic mecca, 
+      and our website will introduce you to some of the city's most popular eateries. From scrumptious local seafood delicacies 
+      to authentic regional cuisine, you'll embark on a gourmet excursion that will excite your taste buds and leave you wanting 
+      more.</p>
+
+    <p style="font-size: 25px; font-family: 'Cormorant Garamond', serif; color: #fff;">Furthermore, we understand that no vacation is complete 
+      without a little shopping therapy. Fuzhou has a wide range of retail venues, from vibrant markets to contemporary malls. 
+      Our website will lead you through these bustling retail districts, where you can buy anything from traditional handicrafts 
+      to trendy apparel and technology.</p>
+
+    <p style="font-size: 25px; font-family: 'Cormorant Garamond', serif; color: #fff;">This portal is your go-to resource for uncovering the 
+      hidden jewels of this magnificent city, whether you're a history buff, a foodie, or a shopaholic. Prepare for an exciting 
+      adventure voyage as we encourage you to immerse yourself in the mesmerizing attractions of Fuzhou, China.</p>
+  </div>
+
+
+</body>
+</html>

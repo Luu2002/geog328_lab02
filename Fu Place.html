@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- main.css file for styling -->
+<style>
+    /* navigation bar */
+	.navbar {overflow: hidden; background-color: #1c346c;}
+	/* links inside the bar */
+	.navbar a {float: left; display: block; color: white; text-align: center; padding: 30px 40px; text-decoration: none; 
+        font-size: 30px;}
+	.navbar a:hover {background-color: #12aad5; color: black;}
+	/* dropdown menu */
+	.dropdown {float: left; overflow: hidden;}
+	/* dropdown button */
+	.dropdown .dropbtn {font-size: 30px; border: none; outline: none; color: white; padding: 30px 40px; 
+        background-color: inherit; font-family: inherit; margin: 0;}
+	/* dropdown content */
+	.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
+	/* links inside the dropdown */
+	.dropdown-content a {float: none; color: black; padding: 12px 16px; text-decoration: none; display: block;
+		text-align: left;}
+	/* color of dropdown when hover */
+	.dropdown-content a:hover {background-color: #12aad5; color: black;}
+	/* dropdown menu when hover */
+	.dropdown:hover .dropdown-content {display: block;}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+        padding: 40px 0;
+        background-color: #d6cece;
+        color: #501d1d;
+        font-family: 'Arial Black', sans-serif;
+        font-size: 36px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        }
+        
+        .store-card {
+            width: 800px;
+            margin: 20px auto;
+            padding: 80px;
+            background-color: #7ec6b1;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .store-card h2 {
+            margin-top: 0;
+            font-size: 40px;
+        }
+        
+        .store-card p {
+            margin-bottom: 0;
+            font-size: 25px;
+        }
+
+</style>
+
+    <!-- Navigation bar -->
+        <div class="navbar">
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Fuzhou</button>
+          <div class="dropdown-content">
+            <a href="Fu Food.html">Fuzhou Cuisine</a>
+            <a href="Fu Place.html">Shop in Fuzhou</a>
+            <a href="Fu Visit.html">Explore Fuzhou</a>
+          </div>
+        </div>
+            <a href="More Information.html">More Information</a>
+        </div>
+
+    <!--Page Context-->
+    <h1>Fu Place - Fun Shopping in Fuzhou</h1>
+
+    <div class="store-card">
+        <h2>Star Boutique</h2>
+        <p><strong>Address:</strong> 123 Fu Street, Fuzhou</p>
+        <p><strong>Phone:</strong> +123 456 789</p>
+        <p><strong>Website:</strong> <a href="http://www.starboutique.com">www.starboutique.com</a></p>
+        <p>Star Boutique is a trendy fashion store offering a wide range of clothing, shoes, and accessories for men and women. Explore the latest fashion trends and find unique pieces to elevate your style.</p>
+    </div>
+
+    <div class="store-card">
+        <h2>Toys Galore</h2>
+        <p><strong>Address:</strong> 456 Joy Avenue, Fuzhou</p>
+        <p><strong>Phone:</strong> +987 654 321</p>
+        <p><strong>Website:</strong> <a href="http://www.toysgalore.com">www.toysgalore.com</a></p>
+        <p>Toys Galore is a paradise for kids and toy enthusiasts. Discover a vast collection of toys, games, and puzzles that ignite creativity and bring joy to children of all ages.</p>
+    </div>
+
+    <div class="store-card">
+        <h2>Gadget Emporium</h2>
+        <p><strong>Address:</strong> 789 Tech Street, Fuzhou</p>
+        <p><strong>Phone:</strong> +321 987 654</p>
+        <p><strong>Website:</strong> <a href="http://www.gadgetemporium.com">www.gadgetemporium.com</a></p>
+        <p>Gadget Emporium is a haven for tech enthusiasts. Explore the latest gadgets, smartphones, smart home devices, and more. Stay ahead with cutting-edge technology.</p>
+    </div>
+</head>
+<body>
