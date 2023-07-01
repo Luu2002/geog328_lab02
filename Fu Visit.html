@@ -1,91 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-<!-- main.css file for styling -->
-<style>
-    /* navigation bar */
-	.navbar {overflow: hidden; background-color: #1c346c;}
-	/* links inside the bar */
-	.navbar a {float: left; display: block; color: white; text-align: center; padding: 30px 40px; text-decoration: none; 
-        font-size: 30px;}
-	.navbar a:hover {background-color: #12aad5; color: black;}
-	/* dropdown menu */
-	.dropdown {float: left; overflow: hidden;}
-	/* dropdown button */
-	.dropdown .dropbtn {font-size: 30px; border: none; outline: none; color: white; padding: 30px 40px; 
-        background-color: inherit; font-family: inherit; margin: 0;}
-	/* dropdown content */
-	.dropdown-content {display: none; position: absolute; background-color: #f9f9f9; min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;}
-	/* links inside the dropdown */
-	.dropdown-content a {float: none; color: black; padding: 12px 16px; text-decoration: none; display: block;
-		text-align: left;}
-	/* color of dropdown when hover */
-	.dropdown-content a:hover {background-color: #12aad5; color: black;}
-	/* dropdown menu when hover */
-	.dropdown:hover .dropdown-content {display: block;}
-
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-        }
-
-        h1 {
-            text-align: center;
-            padding: 40px 0;
-            color: #ae7608;
-            font-family: 'Pacifico', cursive;
-            font-size: 48px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        .location-card {
-        width: 400px;
-        margin: 20px;
-        padding: 30px;
-        background-color: #fff;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        display: inline-block; /* Display cards side by side */
-        vertical-align: top; /* Align cards to the top */
-    }
-
-    .location-card h2 {
-        text-align: center;
-        font-size: 24px;
-        margin-top: 0;
-    }
-
-    .location-card p {
-        text-align: justify;
-        margin-bottom: 0;
-    }
-
-    .location-card img {
-        width: 100%;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-
-    </style>
-</style>
+    <head>
+        <!-- Including the main.css file for styling -->
+        <link rel="stylesheet" href="css/main.css">
+    </head>
 
     <!-- Navigation bar -->
-        <div class="navbar">
+    <div class="navbar">
         <a href="index.html">Home</a>
         <div class="dropdown">
-          <button class="dropbtn">Fuzhou</button>
-          <div class="dropdown-content">
-            <a href="Fu Food.html">Fuzhou Cuisine</a>
-            <a href="Fu Place.html">Shop in Fuzhou</a>
-            <a href="Fu Visit.html">Explore Fuzhou</a>
-          </div>
+            <button class="dropbtn">Fuzhou</button>
+            <div class="dropdown-content">
+                <a href="Fu Food.html">Fuzhou Cuisine</a>
+                <a href="Fu Place.html">Shop in Fuzhou</a>
+                <a href="Fu Visit.html">Explore Fuzhou</a>
+            </div>
         </div>
             <a href="More Information.html">More Information</a>
-        </div>
+    </div>
 
     <!--Page Context-->
     <h1> Explore Fuzhou's Charm</h1>
