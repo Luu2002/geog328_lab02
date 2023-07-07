@@ -1,3 +1,15 @@
+/* When the screen is less than 800 pixels wide */
+@media screen and (max-width: 800px) {
+    .topnav a:not(.active) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
 /* Home Page */
 /* Style the navigation bar container */
 .navbar {
